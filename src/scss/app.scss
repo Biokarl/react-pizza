@@ -225,6 +225,26 @@ body {
             display: none;
           }
         }
+
+        &:disabled {
+          opacity: 0.18;
+          background-color: transparent;
+
+          &:active {
+            transform: none;
+          }
+
+          &:hover {
+            background-color: transparent;
+            svg path {
+              fill: #3d3d3d;
+            }
+          }
+
+          svg path {
+            fill: #3d3d3d;
+          }
+        }
       }
 
       b {
